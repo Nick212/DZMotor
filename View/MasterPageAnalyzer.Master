@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageAnalyzer.master.cs" Inherits="DzAnalyzer.View.MasterPageAnalyzer" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--<link href="CSS/Tela.css" rel="stylesheet" />-->
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="../Scripts/jquery-2.1.1.min.js"></script>
+    <script src="../Scripts/jquery.price_format.2.0.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <form id="form1" runat="server">
+        <div style="width: 100%; height: 1026px;">
+            <div style="width: 20%; height: 650px; float: left;">
+                <div class="list-group">
+                    <ul>
+                        <li class="list-group-item active">Atendimento</li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Atendimento/AtendimentoCliente.aspx")%>'>Atendimento ao Cliente</a> </li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Atendimento/AtendimentoParceiro.aspx")%>'>Atendimento ao Parceiro</a> </li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Atendimento/ConsultarChamado.aspx")%>'>Consultar Chamado</a> </li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Atendimento/AlterarChamado.aspx")%>'>Editar Chamado</a> </li>
+                    </ul>
+                    <ul>
+                        <li class="list-group-item active">Catálogo</li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Catalogo/CadastrarProdutos.aspx")%>'>Cadastrar Produto</a> </li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Catalogo/ListarProdutos.aspx")%>'>Listar Produto</a> </li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Catalogo/CadastrarCategoria.aspx")%>'>Cadastrar Categoria</a> </li>
+                    </ul>
+                    <ul>
+                        <li class="list-group-item active">Financeiro</li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Financeiro/GerenciarFaturas.aspx")%>'>Gerenciar Faturas</a> </li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Financeiro/CriarFaturas.aspx")%>'>Criar Fatura</a> </li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Financeiro/EditarFaturas.aspx")%>'>Editar Faturas</a> </li>
+                    </ul>
+                    <ul>
+                        <li class="list-group-item active">Parceiro</li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Parceiro/Cadastro_Parceiro.aspx")%>'>Cadastro de Parceiros</a> </li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Parceiro/Editar_parceiros.aspx")%>'>Editar Parceiro</a> </li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Parceiro/Listar_parceiros.aspx")%>'>Listar Parceiros</a> </li>
+                    </ul>
+                    <ul>
+                        <li class="list-group-item active">Cadastro</li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Cadastro/CriarUsuario.aspx")%>'>Criar Usuário</a> </li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Cadastro/EditarUsuario.aspx")%>'>Editar Usuário</a> </li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Cadastro/BuscarUsuario.aspx")%>'>Buscar Usuário</a> </li>
+                    </ul>
+                    <ul>
+                        <li class="list-group-item active">Crédito</li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Credito/Criar.aspx")%>'>Inserir Crédito</a> </li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Credito/Listar.aspx")%>'>Listar Créditos</a> </li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Credito/Editar.aspx")%>'>Editar Créditos</a> </li>
+                    </ul>
+                    <ul>
+                        <li class="list-group-item active">Troca</li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Troca/Editar.aspx")%>'>Trocar</a> </li>
+                        <li class="list-group-item"><a href='<%=ResolveUrl("~/View/Troca/ListaTrocas.aspx")%>'>Listar Trocas</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="width: 75%; height: 1024px; float: right;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+    <script src="../Scripts/BibliotecaJavaScript.js"></script>
+    
+</body>
+</html>

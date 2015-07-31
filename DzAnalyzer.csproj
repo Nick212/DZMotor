@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C5644A06-6957-4010-92CC-0D26AADD8FD9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DzAnalyzer</RootNamespace>
+    <AssemblyName>DzAnalyzer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Img\logo_dotz.jpg" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\maskMoney.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="View\Catalogo\CadastrarCategoria.aspx" />
+    <Content Include="View\CSS\FundoDotz.jpg" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="TreeLineImages\dash.gif" />
+    <Content Include="TreeLineImages\dashminus.gif" />
+    <Content Include="TreeLineImages\dashplus.gif" />
+    <Content Include="TreeLineImages\i.gif" />
+    <Content Include="TreeLineImages\l.gif" />
+    <Content Include="TreeLineImages\lminus.gif" />
+    <Content Include="TreeLineImages\lplus.gif" />
+    <Content Include="TreeLineImages\minus.gif" />
+    <Content Include="TreeLineImages\noexpand.gif" />
+    <Content Include="TreeLineImages\plus.gif" />
+    <Content Include="TreeLineImages\r.gif" />
+    <Content Include="TreeLineImages\rminus.gif" />
+    <Content Include="TreeLineImages\rplus.gif" />
+    <Content Include="TreeLineImages\t.gif" />
+    <Content Include="TreeLineImages\tminus.gif" />
+    <Content Include="TreeLineImages\tplus.gif" />
+    <Content Include="View\Atendimento\AlterarChamado.aspx" />
+    <Content Include="View\Atendimento\ConsultarChamado.aspx" />
+    <Content Include="View\Atendimento\AtendimentoCliente.aspx" />
+    <Content Include="View\Atendimento\AtendimentoParceiro.aspx" />
+    <Content Include="View\Cadastro\BuscarUsuario.aspx" />
+    <Content Include="View\Cadastro\CriarUsuario.aspx" />
+    <Content Include="View\Cadastro\EditarUsuario.aspx" />
+    <Content Include="View\Catalogo\CadastrarProdutos.aspx" />
+    <Content Include="View\Catalogo\ListarProdutos.aspx" />
+    <Content Include="View\Credito\Criar.aspx" />
+    <Content Include="View\Credito\Editar.aspx" />
+    <Content Include="View\Credito\Listar.aspx" />
+    <Content Include="View\CSS\Tela.css" />
+    <Content Include="View\Financeiro\CriarFaturas.aspx" />
+    <Content Include="View\Financeiro\EditarFaturas.aspx" />
+    <Content Include="View\Financeiro\GerenciarFaturas.aspx" />
+    <Content Include="View\MasterPageAnalyzer.Master" />
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="View\PaginaInicial.aspx" />
+    <Content Include="View\Parceiro\Cadastro_parceiro.aspx" />
+    <Content Include="View\Parceiro\Editar_parceiros.aspx" />
+    <Content Include="View\Parceiro\Listar_parceiros.aspx" />
+    <Content Include="Scripts\jquery.price_format.2.0.min.js" />
+    <Content Include="View\Scripts\BibliotecaJavaScript.js" />
+    <Content Include="View\Troca\Editar.aspx" />
+    <Content Include="View\Troca\ListaTrocas.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Banco\Atendimento\Atendimento_Operacoes.cs" />
+    <Compile Include="Banco\Atendimento\Cadastro_Atendimento_Operacoes.cs" />
+    <Compile Include="Banco\CadastroBD\CadastroOperacoes.cs" />
+    <Compile Include="Banco\CadastroBD\EditaContato.cs" />
+    <Compile Include="Banco\CatalogoBD\ProdutoOperações.cs" />
+    <Compile Include="Banco\CatalogoBD\StatusProdutoOperações.cs" />
+    <Compile Include="Banco\ConexaoBD.cs" />
+    <Compile Include="Banco\CatalogoBD\CategoriaOperações.cs" />
+    <Compile Include="Banco\CreditoBD\Credito_Operações.cs" />
+    <Compile Include="Banco\Financeiro_BD\Financeiro_Operações.cs" />
+    <Compile Include="Models\Atendimento\ListaChamadoCliente.cs" />
+    <Compile Include="Models\Atendimento\ListaChamadoParceiro.cs" />
+    <Compile Include="Models\Atendimento\NChamadoCliente_Parceiro.cs" />
+    <Compile Include="Models\Atendimento\TipoAtendimento.cs" />
+    <Compile Include="Models\Cadastro\ConsultaCad.cs" />
+    <Compile Include="Models\Cadastro\ConsultaCad2.cs" />
+    <Compile Include="Models\Cadastro\TipoPessoa.cs" />
+    <Compile Include="Models\Cadastro\ID_Nome.cs" />
+    <Compile Include="Models\Catalogo\eStatusProduto.cs" />
+    <Compile Include="Models\Catalogo\ProdutoModelView.cs" />
+    <Compile Include="Models\Credito\Credito_Nome.cs" />
+    <Compile Include="Models\Credito\Mecanica.cs" />
+    <Compile Include="Models\Credito\Status.cs" />
+    <Compile Include="Models\Credito\Valor_Mecanica.cs" />
+    <Compile Include="Models\Extrato\Extrato.cs" />
+    <Compile Include="Models\Financeiro\FaturaModelViewCredito.cs" />
+    <Compile Include="Models\Financeiro\FaturaModelViewParceiro.cs" />
+    <Compile Include="Models\Financeiro\ListagemFatura.cs" />
+    <Compile Include="Models\Parceiro\eTipoParceiro.cs" />
+    <Compile Include="Banco\ParceiroBD\ParceiroListas.cs" />
+    <Compile Include="Banco\TrocaBD\Troca_Operações.cs" />
+    <Compile Include="Models\Atendimento\StatusAtendimento.cs" />
+    <Compile Include="Models\Cadastro\Cadastro.cs" />
+    <Compile Include="Models\Cadastro\Cidade.cs" />
+    <Compile Include="Models\Cadastro\Contato.cs" />
+    <Compile Include="Models\Cadastro\Endereco.cs" />
+    <Compile Include="Models\Cadastro\Estado.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Atendimento\AtendimentoCliente.cs" />
+    <Compile Include="Models\Atendimento\AtendimentoCompra.cs" />
+    <Compile Include="Models\Atendimento\AtendimentoParceiro.cs" />
+    <Compile Include="Models\Catalogo\Categoria.cs" />
+    <Compile Include="Models\Catalogo\ProdutoStatus.cs" />
+    <Compile Include="Models\Catalogo\Produto.cs" />
+    <Compile Include="Models\Catalogo\SubCategoria.cs" />
+    <Compile Include="Models\Credito\ModeloCredito.cs" />
+    <Compile Include="Models\Financeiro\Fatura.cs" />
+    <Compile Include="Models\Financeiro\StatusFatura.cs" />
+    <Compile Include="Models\Parceiro\Descricao_tipo_parceiro.cs" />
+    <Compile Include="Models\Parceiro\GridView.cs" />
+    <Compile Include="Models\Parceiro\Parceiro.cs" />
+    <Compile Include="Models\Parceiro\TipoParceiro.cs" />
+    <Compile Include="Models\Troca\ListaDeTrocas.cs" />
+    <Compile Include="Models\Troca\Troca.cs" />
+    <Compile Include="Models\Troca\TrocaFornecedor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Atendimento\AlterarChamado.aspx.cs">
+      <DependentUpon>AlterarChamado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Atendimento\AlterarChamado.aspx.designer.cs">
+      <DependentUpon>AlterarChamado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Atendimento\AtendimentoCliente.aspx.cs">
+      <DependentUpon>AtendimentoCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Atendimento\AtendimentoCliente.aspx.designer.cs">
+      <DependentUpon>AtendimentoCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Atendimento\AtendimentoParceiro.aspx.cs">
+      <DependentUpon>AtendimentoParceiro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Atendimento\AtendimentoParceiro.aspx.designer.cs">
+      <DependentUpon>AtendimentoParceiro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Atendimento\ConsultarChamado.aspx.cs">
+      <DependentUpon>ConsultarChamado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Atendimento\ConsultarChamado.aspx.designer.cs">
+      <DependentUpon>ConsultarChamado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastro\BuscarUsuario.aspx.cs">
+      <DependentUpon>BuscarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Cadastro\BuscarUsuario.aspx.designer.cs">
+      <DependentUpon>BuscarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastro\CriarUsuario.aspx.cs">
+      <DependentUpon>CriarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Cadastro\CriarUsuario.aspx.designer.cs">
+      <DependentUpon>CriarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cadastro\EditarUsuario.aspx.cs">
+      <DependentUpon>EditarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Cadastro\EditarUsuario.aspx.designer.cs">
+      <DependentUpon>EditarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Catalogo\CadastrarProdutos.aspx.cs">
+      <DependentUpon>CadastrarProdutos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Catalogo\CadastrarProdutos.aspx.designer.cs">
+      <DependentUpon>CadastrarProdutos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Catalogo\CadastrarCategoria.aspx.cs">
+      <DependentUpon>CadastrarCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Catalogo\CadastrarCategoria.aspx.designer.cs">
+      <DependentUpon>CadastrarCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Catalogo\ListarProdutos.aspx.cs">
+      <DependentUpon>ListarProdutos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Catalogo\ListarProdutos.aspx.designer.cs">
+      <DependentUpon>ListarProdutos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Credito\Criar.aspx.cs">
+      <DependentUpon>Criar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Credito\Criar.aspx.designer.cs">
+      <DependentUpon>Criar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Credito\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Credito\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Credito\Listar.aspx.cs">
+      <DependentUpon>Listar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Credito\Listar.aspx.designer.cs">
+      <DependentUpon>Listar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Financeiro\CriarFaturas.aspx.cs">
+      <DependentUpon>CriarFaturas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Financeiro\CriarFaturas.aspx.designer.cs">
+      <DependentUpon>CriarFaturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Financeiro\EditarFaturas.aspx.cs">
+      <DependentUpon>EditarFaturas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Financeiro\EditarFaturas.aspx.designer.cs">
+      <DependentUpon>EditarFaturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Financeiro\GerenciarFaturas.aspx.cs">
+      <DependentUpon>GerenciarFaturas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Financeiro\GerenciarFaturas.aspx.designer.cs">
+      <DependentUpon>GerenciarFaturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\MasterPageAnalyzer.Master.cs">
+      <DependentUpon>MasterPageAnalyzer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\MasterPageAnalyzer.Master.designer.cs">
+      <DependentUpon>MasterPageAnalyzer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="View\PaginaInicial.aspx.cs">
+      <DependentUpon>PaginaInicial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\PaginaInicial.aspx.designer.cs">
+      <DependentUpon>PaginaInicial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Parceiro\Cadastro_parceiro.aspx.cs">
+      <DependentUpon>Cadastro_parceiro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Parceiro\Cadastro_parceiro.aspx.designer.cs">
+      <DependentUpon>Cadastro_parceiro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Parceiro\Editar_parceiros.aspx.cs">
+      <DependentUpon>Editar_parceiros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Parceiro\Editar_parceiros.aspx.designer.cs">
+      <DependentUpon>Editar_parceiros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Parceiro\Listar_parceiros.aspx.cs">
+      <DependentUpon>Listar_parceiros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Parceiro\Listar_parceiros.aspx.designer.cs">
+      <DependentUpon>Listar_parceiros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Troca\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Troca\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Troca\ListaTrocas.aspx.cs">
+      <DependentUpon>ListaTrocas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Troca\ListaTrocas.aspx.designer.cs">
+      <DependentUpon>ListaTrocas.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61946</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61946/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
